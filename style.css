@@ -1,0 +1,11 @@
+body {
+  font-family: 'Lato', sans-serif;
+  width: auto;
+  text-align: center;
+  display: block;
+}
+
+.iconNewGame {
+  width: 10px;
+  height: auto;
+}
