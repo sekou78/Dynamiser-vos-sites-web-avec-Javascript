@@ -1,11 +1,53 @@
 body {
   font-family: 'Lato', sans-serif;
-  width: auto;
+  border: 2px black solid ;
+  width: 500px;
+  height: 300px;
+  margin: 50px 50px 50px 50px ;
+  padding-top: 20px;
+  padding-bottom: 50px;
   text-align: center;
-  display: block;
+}
+/*New Game */
+.newGame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5px;
+  font-size: 17px;
 }
 
 .iconNewGame {
-  width: 10px;
+  width: 14px;
   height: auto;
+}
+/*le corps du jeu*/
+.spaceGame {
+  display: flex;
+  margin: 0 70px 0 70px;
+  justify-content: space-between;
+}
+
+/*icone de lancer+ajoutHold*/
+#icon-roll {
+  width: 12px;
+  height: auto;
+}
+.roll {
+  font-size: 10px;
+}
+.current {
+  border: 2px black ;
+  background-color: red;
+  width: 50px;
+  height: 40px;
+  font-size: 5px;
+  text-align: top;
+}
+.current p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 2px;
 }
