@@ -9,41 +9,61 @@ let images = [
 
 let dice = document.querySelectorAll("img");
 let roundValue = document.getElementById('ROUND1')
+let roundValue2 = document.getElementById('ROUND2')
 let a;
 let zGlobal = document.getElementById('GLOBAL1')
-function switchPlayer(Global) {
-  
-}
+let zGlobal2 = document.getElementById('GLOBAL2')
+let GLOBALE1 = 0;
+let GLOBALE2 = 0;
+let tour = 0;
+// function switchPlayer(Global) {
+
+// }
 
 function roll() {
-  dice.forEach(function(die){
+  dice.forEach(function (die) {
     die.classList.add("shake");
   });
-  setTimeout(function(){
-    dice.forEach(function(die){
+  setTimeout(function () {
+    dice.forEach(function (die) {
       die.classList.remove("shake");
     });
-    
     let dieValue = Math.floor(Math.random() * 6);
-    
+
     console.log((dieValue) + 1);
     document.querySelector("#die").setAttribute("src", images[dieValue]);
     // document.querySelector("#ROUND1").innerHTML = (dieValue + 1);
     a = ((dieValue) + 1)
-    roundValue.innerHTML = a;
+    if (tour == 0) {
+      roundValue.innerHTML = a;
+    } else {
+      roundValue2.innerHTML = a;
+
+    }
+    if (a == 1 && tour == 0) {
+      tour++
+    } else if
+      (a == 1 && tour == 1) {
+      tour--
+    }
   },
-  1000
+    1000
   );
-  // while(player)
-  // if(a = 1) {
-  //   a = 0;
-  // }
 }
-let GLOBALE1 = 0 ;
 function hold() {
+  if (tour == 0) {
     GLOBALE1 += a;
     zGlobal.innerHTML = GLOBALE1;
     console.log(GLOBALE1);
+    a = 0;
+    tour++
+  } else {
+    GLOBALE2 += a;
+    zGlobal2.innerHTML = GLOBALE2;
+    console.log(GLOBALE2)
+    a = 0;
+    tour--
+  }
 }
 
 
