@@ -16,9 +16,6 @@ let zGlobal2 = document.getElementById('GLOBAL2')
 let GLOBALE1 = 0;
 let GLOBALE2 = 0;
 let tour = 0;
-// function switchPlayer(Global) {
-
-// }
 
 function roll() {
   dice.forEach(function (die) {
@@ -38,12 +35,10 @@ function roll() {
       roundValue.innerHTML = a;
     } else {
       roundValue2.innerHTML = a;
-
     }
     if (a == 1 && tour == 0) {
       tour++
-    } else if
-      (a == 1 && tour == 1) {
+    } else if (a == 1 && tour == 1) {
       tour--
     }
   },

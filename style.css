@@ -1,3 +1,7 @@
+
+img {
+  cursor: pointer;
+}
 .img-fluid {
   box-shadow: 1px 2px 10px black;
   width: 50px;
