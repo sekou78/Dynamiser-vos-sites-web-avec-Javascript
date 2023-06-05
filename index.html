@@ -19,13 +19,14 @@
   <body>
 
     <div class="newGame">
-      <img class="iconNewGame" src="images/new_game.svg" alt="icone new game">
+      <img class="iconNewGame" id="new-game" src="images/new_game.svg" alt="icone new game" onclick="newgame()">
       <p>NEW GAME</p>
       </div>
-  
+      
       <div class="d-flex flex-nowrap justify-content-evenly">
       <div class="d-flex align-items-start-center flex-column mb-3" style="height: 200px;">
         <div class="p-2">PLAYER 1</div>
+        <img src="images/point_active.png" id="point-active1" class="img-fluid point1" alt="Point active">
         <div class="p-2" id="GLOBAL1">0</div>
         <div class="mt-auto p-2 current">
           CURRENT
@@ -43,6 +44,7 @@
   
       <div class="d-flex align-items-end-center flex-column mb-3" style="height: 200px;">
         <div class="p-2">PLAYER 2</div>
+        <img src="images/point_active.png" id="point-active2" class="img-fluid point2" alt="Point active">
         <div class="p-2" id="GLOBAL2">0</div>
         <div class="mt-auto p-2 current">
           CURRENT

@@ -3,11 +3,18 @@ img {
   cursor: pointer;
 }
 .img-fluid {
-  box-shadow: 1px 2px 10px black;
+  box-shadow: 1px 2px 70px rgb(202, 199, 199);
   width: 50px;
   height: 50px;
 }
-
+.point1 {
+  width: 10px;
+  height: 10px;
+}
+.point2 {
+  width: 10px;
+  height: 10px;
+}
 body {
   font-family: 'Lato', sans-serif;
   border: 10px #D1913C solid;
