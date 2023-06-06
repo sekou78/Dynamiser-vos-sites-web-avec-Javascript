@@ -6,7 +6,8 @@ let images = [
   "images/dice-05.png",
   "images/dice-06.png",
 ];
-let newGame = document.getElementById("new-game")
+
+//let newGame = document.getElementById("new-game");
 let active1 = document.getElementById("point-active1")
 let active2 = document.getElementById("point-active2")
 let dice = document.querySelectorAll("img");
@@ -20,7 +21,7 @@ let zGlobal2 = document.getElementById("GLOBAL2");
 let GLOBALE1 = 0;
 let GLOBALE2 = 0;
 let tour = 0;
-let endGame;
+//let endGame;
 
 
 function roll() {
@@ -63,6 +64,7 @@ function roll() {
     }
   }, 1000);
 }
+
 function hold() {
   if (tour == 0) {
     GLOBALE1 += GLOBALROUND1;
@@ -82,15 +84,38 @@ function hold() {
     tour--;
   }
 }
-// newGame().addEventListener('click',()=> {
-function newgame() {
-  // if (endGame == 0) {
-    tour == 0;
+
+
+function endGame() {
+  if (endGame) {
     GLOBALE1 = 0;
-    GLOBALE2 = 0;
-    GLOBALROUND1 = 0;
-    GLOBALROUND2 = 0;
+    zGlobal.innerHTML = 0;
+    valeurDuDés = 0;
     roundValue.innerHTML = 0;
+    GLOBALROUND1 = 0;
+  } else if (endGame) {
+    GLOBALE2 = 0;
+    zGlobal2.innerHTML = 0;
+    valeurDuDés = 0;
     roundValue2.innerHTML = 0;
-    }
+    GLOBALROUND2 = 0;
+  }
+}
+
+// endGame = document.addEventListener("click", () => {
+
+// }); 
+
+
+// newGame().addEventListener('click',()=> {
+// function newgame() {
+//   // if (endGame == 0) {
+//     tour == 0;
+//     GLOBALE1 = 0;
+//     GLOBALE2 = 0;
+//     GLOBALROUND1 = 0;
+//     GLOBALROUND2 = 0;
+//     roundValue.innerHTML = 0;
+//     roundValue2.innerHTML = 0;
+//     }
   
