@@ -9,7 +9,7 @@
     <meta name="author" content="Sékou Cissé" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
@@ -22,18 +22,18 @@
       <img class="iconNewGame" id="new-game" src="images/new_game.svg" alt="icone new game" onclick="endGame()">
       <p>NEW GAME</p>
       </div>
-      
+
       <div class="d-flex flex-nowrap justify-content-evenly">
       <div class="d-flex align-items-start-center flex-column mb-3" style="height: 200px;">
-        <div class="p-2">PLAYER 1</div>
-        <img src="images/point_active.png" id="point-active1" class="img-fluid point1" alt="Point active">
+        <div class="p-2">PLAYER 1 <img src="images/point_active.png" id="point-active1" class="img-fluid point1" alt="Point active"></div>
+
         <div class="p-2" id="GLOBAL1">0</div>
-        <div class="mt-auto p-2 current">
+        <div class="mx-auto mt-auto p-2 current">
           CURRENT
           <p id="ROUND1">0</p>
         </div>
       </div>
-  
+
       <div class="d-flex align-self-center flex-column mb-3" style="height: 200px;">
         <div class="mb-auto p-5" id="dice">
           <img src="images/dice-01.png" id="die" class="img-fluid" alt="les Dé">
@@ -41,20 +41,20 @@
         <div class="p-2 roll"> <img id="icon-roll" src="images/roll_dice.svg" alt="icone lancer" onclick="roll()">ROLL DICE</div>
         <div class="p-2 roll"><img id="icon-roll" src="images/hold.svg" alt="icone ajout" onclick="hold()">HOLD</div>
       </div>
-  
+
       <div class="d-flex align-items-end-center flex-column mb-3" style="height: 200px;">
-        <div class="p-2">PLAYER 2</div>
-        <img src="images/point_active.png" id="point-active2" class="img-fluid point2" alt="Point active">
+        <div class="p-2">PLAYER 2 <img src="images/point_active.png" id="point-active2" class="img-fluid point2" alt="Point active"></div>
+
         <div class="p-2" id="GLOBAL2">0</div>
-        <div class="mt-auto p-2 current">
+        <div class="mx-auto mt-auto p-2 current">
           CURRENT
           <p id="ROUND2">0</p>
         </div>
       </div>
       </div>
-    
+
       <script src="script.js"></script>
-  
+
   </body>
 
 </html>

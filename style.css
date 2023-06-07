@@ -7,13 +7,27 @@ img {
   width: 50px;
   height: 50px;
 }
-.point1 {
+#point-active1 {
   width: 10px;
   height: 10px;
+  margin-left: 10px;
+  /* visibility: hidden;
+  opacity: 0; */
 }
-.point2 {
+#point-active2 {
   width: 10px;
   height: 10px;
+  margin-left: 10px;
+  /* visibility: hidden;
+  opacity: 0; */
+}
+.show-reponse {
+  visibility: visible;
+  opacity: 1;
+}
+.hidden-reponse {
+  visibility: hidden;
+  opacity: 0;
 }
 body {
   font-family: 'Lato', sans-serif;
