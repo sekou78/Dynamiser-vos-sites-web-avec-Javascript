@@ -13,10 +13,49 @@
           rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Jeu de Dé</title>
+    <title>TABLE de Dé</title>
   </head>
 
-  <body>
+  <body class="container-fluid">
+    
+    <div class="d-flex flex-row justify-content-around">
+
+      <div>
+          <div id="name-1">PLAYER 1</div>
+          <div id="GLOBAL1">0</div>
+          <div class="mt-auto p-2 ">
+              <div>CURRENT</div>
+              <div id="current-1">0</div>
+          </div>
+      </div>
+
+      <div>
+        <div class=" mb-auto p-2">
+        <img src="images/new_game.svg" class="img-fluid btn-new" alt="icone new game">
+          NEW GAME
+        </div>
+        <div id="dice">Flex item</div>
+        <div id="hold"> <img src="images/roll_dice.svg" class="img-fluid btn-new" alt="lacer de Dé">
+          ROLL DICE
+        </div>
+        <div id="roll"> <img src="images/hold.svg" class="img-fluid btn-new" alt="ajout de compte">
+          HOLD
+        </div>
+      </div>
+
+      <div >
+        <div class="p-2">
+          <div id="name-2">PLAYER 2</div>
+          <div id="GLOBAL2">0</div>
+        </div>
+        <div class="mt-auto p-2">
+          <div>CURRENT</div>
+          <div id="current-2">0</div>
+      </div>
+  </div>
+
+    </div>
+
 
   </body>
 
