@@ -2,18 +2,10 @@
   font-family: 'Lato', sans-serif;
   padding: 0;
   margin: 0;
-  box-sizing: content-box;
 }
 
 body {
-  width: 100vw;
   height: 100vh;
-}
-
-.img-fluid {
-  width: 14px;
-  height: auto;
-  cursor: pointer;
 }
 
 .container-fluid {
@@ -29,139 +21,18 @@ body {
   align-items: center;
 }
 
-
-
-/*New Game */
-/* .newGame {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  margin-top: 25px;
-  gap: 5px;
-  font-size: 15px;
-} */
-
-img {
+.img-fluid {
+  width: 15px;
+  height: auto;
   cursor: pointer;
 }
-.img-fluid {
-  box-shadow: 1px 2px 70px rgb(202, 199, 199);
-  width: 50px;
-  height: 50px;
-}
-#point-active1 {
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  /* visibility: hidden;
-  opacity: 0; */
-}
-#point-active2 {
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  /* visibility: hidden;
-  opacity: 0; */
-}
-.show-reponse {
-  visibility: visible;
-  opacity: 1;
-}
-.hidden-reponse {
-  visibility: hidden;
-  opacity: 0;
-}
-body {
-  font-family: 'Lato', sans-serif;
-  border: 10px #D1913C solid;
-  width: 500px;
-  height: 300px;
-  margin: 50px 50px 50px 50px;
-  padding-top: 20px;
-  padding-bottom: 50px;
-  text-align: center;
-}
 
-/*New Game */
-.newGame {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  gap: 5px;
-  font-size: 17px;
-}
-
-.iconNewGame {
-  width: 14px;
+.dice {
+  width: 50%;
   height: auto;
 }
 
-/*le corps du jeu*/
-.spaceGame {
+.active {
   display: flex;
-  margin: 0 70px 0 70px;
-  justify-content: space-between;
-}
 
-/*icone de lancer+ajoutHold*/
-#icon-roll {
-  width: 12px;
-  height: auto;
-}
-
-.roll {
-  font-size: 10px;
-}
-
-.current {
-  border: 2px black;
-  background-color: red;
-  width: 50px;
-  height: 40px;
-  font-size: 5px;
-  text-align: top;
-}
-
-.current p {
-  font-size: 15px;
-  color: white;
-  margin-bottom: 2px;
-}
-
-.shake {
-  animation: shake 0.5s infinite;
-}
-
-@keyframes shake {
-  0% {
-    transform: rotate(30deg);
-  }
-
-  50% {
-    transform: rotate(-30deg);
-  }
-
-  100% {
-    transform: rotate(30deg);
-  }
-}
-
-@media all and (min-width: 320px) and (max-width:768px) {
-  body {
-    width: auto;
-    height: auto;
-  }
-
-  /*
-  .newGame {
-    width: auto;
-  }
-  .d-flex {
-    width: auto;
-  }
-  */
 }
